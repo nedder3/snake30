@@ -167,3 +167,21 @@ for x in [0,1,2]:
 #Objetivo: Escribir un programa que pida al usuario un número entero positivo
 #n y calcule la suma de todos los números enteros desde 1 hasta
 #n inclusive, utilizando tanto un bucle for como un bucle while
+
+numIngresado = int(input("Ingrese un numero : "))
+
+suma=0
+for x in range(1,numIngresado+1):
+    suma += x
+print("la sumatoria es :", suma)
+
+#version con el while
+
+suma = 0
+i = 1
+numIngresado = int(input("Ingrese un numero : "))
+while i <= numIngresado:
+    suma += i
+    i += 1
+
+print(f"la sumatoria es :{suma}")
